@@ -36,3 +36,7 @@
   <button (click)="checkEmail(emailInput.value)">Check email is vaildation</button>
 </div>
 <span *ngIf="emailValidationCheckResult">{{ emailValidationCheckResult }}</span>
+<br>
+{{ obj }} <-- can you see this?<br>
+<!--{{ obj.id }}-->
+{{ obj?.id }} <-- can you see this?<br>
