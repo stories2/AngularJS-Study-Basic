@@ -4,11 +4,13 @@ import {FormsModule} from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
+import { TextBlueDirective } from './text-blue.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HelloComponent
+    HelloComponent,
+    TextBlueDirective
   ],
   imports: [
     BrowserModule,
