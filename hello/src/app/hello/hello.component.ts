@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hello.component.css']
 })
 export class HelloComponent implements OnInit {
+  name: string;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  setName(name: string) {
+    this.name = name;
   }
 
 }
