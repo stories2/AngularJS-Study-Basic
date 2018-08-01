@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HelloComponent implements OnInit {
   name: string;
+  testName: string;
 
   constructor() { }
 
   ngOnInit() {
+    this.testName = "Kim";
   }
 
   setName(name: string) {

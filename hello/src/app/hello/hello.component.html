@@ -4,3 +4,6 @@
 <h2>Hello {{ name }}</h2>
 <input type="text" placeholder="Type your name" #inputYourName>
 <button (click)="setName(inputYourName.value)">Submit</button>
+<br>
+<input id="user" type="text" [value]="testName"><br>
+<input id="user2" type="text" [attr.value]="testName">
