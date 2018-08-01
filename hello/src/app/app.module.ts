@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
 import { TextBlueDirective } from './text-blue.directive';
 import { StyleDirectiveSampleComponent } from './style-directive-sample/style-directive-sample.component';
+import { StructureDirectiveComponent } from './structure-directive/structure-directive.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloComponent,
     TextBlueDirective,
-    StyleDirectiveSampleComponent
+    StyleDirectiveSampleComponent,
+    StructureDirectiveComponent
   ],
   imports: [
     BrowserModule,

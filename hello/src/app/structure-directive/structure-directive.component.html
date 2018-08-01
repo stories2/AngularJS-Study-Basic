@@ -1,0 +1,9 @@
+<p>
+  structure-directive works!
+</p>
+
+<p *ngIf="isShow">is show by ngIf</p>
+
+<p [style.display]="isShow ? 'block': 'none'">is show by style property binding</p>
+
+<button (click)="isShow = !isShow">{{ isShow ? 'Hide' : 'Show'}}</button>
