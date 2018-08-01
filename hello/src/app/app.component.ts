@@ -10,4 +10,5 @@ export class AppComponent {
   isLarge = true;
   isRed = false;
   myClasses = 'text-large color-red';
+  isActive = false;
 }

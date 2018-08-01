@@ -23,3 +23,8 @@
 <div class="text-small color-red" [class.color-red]="isRed">text-small red false</div>
 <div [class]="myClasses">text-large color-red classes</div>
 <div class="text-small color-blue" [class]="myClasses">overwrite classes</div>
+
+<button class="btn"
+        [style.background-color]="isActive ? '#4CAF50' : '#f44336'"
+        [style.font-size.em]="isActive ? 1.2 : 1"
+        (click)="isActive = !isActive">Inline toggle button</button>
