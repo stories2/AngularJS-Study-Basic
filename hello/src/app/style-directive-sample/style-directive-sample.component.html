@@ -1,0 +1,22 @@
+<p>
+  style-directive-sample works!
+</p>
+
+<div>
+  Width: <input type="text" [(ngModel)]="width">
+  <button (click)="increaseWidth()">+</button>
+  <button (click)="decreaseWidth()">-</button>
+
+  Height: <input type="text" [(ngModel)]="height">
+  <button (click)="increaseHeight()">+</button>
+  <button (click)="decreaseHeight()">-</button>
+
+  <div
+    [ngStyle]="{
+    'width.px': width,
+    'height.px': height,
+    'background-color': bgColor,
+    'visibility': isShow ? 'visible' : 'hidden'
+    }"
+    ></div>
+</div>
