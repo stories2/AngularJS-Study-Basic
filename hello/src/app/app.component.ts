@@ -12,6 +12,7 @@ export class AppComponent {
   myClasses = 'text-large color-red';
   isActive = false;
   userName = "KIM";
+  ngModelUserName = "Lee";
 
   setName(event) {
     console.log(event);

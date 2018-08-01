@@ -28,7 +28,11 @@
         [style.background-color]="isActive ? '#4CAF50' : '#f44336'"
         [style.font-size.em]="isActive ? 1.2 : 1"
         (click)="isActive = !isActive">Inline toggle button</button>
-
+<br>
 <input type="text" [value]="userName" (input)="setName($event)">
 <button (click)="clearName()">clear</button>
 <p>name: {{userName}}</p>
+
+<input type="text" [(ngModel)]="ngModelUserName">
+<input type="text" [value]="ngModelUserName" (input)="ngModelUserName=$event.target.value">
+<p>name: {{ngModelUserName}}</p>
