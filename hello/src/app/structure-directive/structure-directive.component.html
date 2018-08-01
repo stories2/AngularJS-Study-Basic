@@ -22,3 +22,11 @@
     {{ customerList | json }}
   </code>
 </pre>
+
+<input type="text" [(ngModel)]="selectedNumber" placeholder="Type number">
+<div [ngSwitch]="selectedNumber">
+  <div *ngSwitchCase="'1'">One</div>
+  <div *ngSwitchCase="'2'">Two</div>
+  <div *ngSwitchCase="'3'">Three</div>
+  <div *ngSwitchDefault>Default</div>
+</div>

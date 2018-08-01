@@ -19,6 +19,7 @@ export class StructureDirectiveComponent implements OnInit {
     {id: 3, name: "Customer 3"},
 
   ];
+  selectedNumber = 0;
 
   constructor() { }
 
