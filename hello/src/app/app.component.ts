@@ -11,4 +11,14 @@ export class AppComponent {
   isRed = false;
   myClasses = 'text-large color-red';
   isActive = false;
+  userName = "KIM";
+
+  setName(event) {
+    console.log(event);
+    this.userName = event.target.value;
+  }
+
+  clearName() {
+    this.userName = "";
+  }
 }

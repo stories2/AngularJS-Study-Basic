@@ -28,3 +28,7 @@
         [style.background-color]="isActive ? '#4CAF50' : '#f44336'"
         [style.font-size.em]="isActive ? 1.2 : 1"
         (click)="isActive = !isActive">Inline toggle button</button>
+
+<input type="text" [value]="userName" (input)="setName($event)">
+<button (click)="clearName()">clear</button>
+<p>name: {{userName}}</p>
