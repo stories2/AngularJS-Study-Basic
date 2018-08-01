@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hello';
+  isLarge = true;
+  isRed = false;
+  myClasses = 'text-large color-red';
 }

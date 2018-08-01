@@ -19,3 +19,7 @@
 </ul>
 <app-hello></app-hello>
 
+<div [class.text-large]="isLarge">text-large true</div>
+<div class="text-small color-red" [class.color-red]="isRed">text-small red false</div>
+<div [class]="myClasses">text-large color-red classes</div>
+<div class="text-small color-blue" [class]="myClasses">overwrite classes</div>
