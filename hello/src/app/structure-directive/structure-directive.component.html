@@ -7,3 +7,18 @@
 <p [style.display]="isShow ? 'block': 'none'">is show by style property binding</p>
 
 <button (click)="isShow = !isShow">{{ isShow ? 'Hide' : 'Show'}}</button>
+
+<input type="text" placeholder="Type customer name" #customerName>
+<button (click)="addCustomer(customerName.value)" > add new customer</button>
+
+<ul>
+  <li *ngFor="let customer of customerList; let i = index">
+    {{ i }} : {{ customer.name }}
+    <button (click)="removeUser(customer.id)" >X</button>
+  </li>
+</ul>
+<pre>
+  <code>
+    {{ customerList | json }}
+  </code>
+</pre>
