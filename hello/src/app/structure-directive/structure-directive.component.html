@@ -12,7 +12,7 @@
 <button (click)="addCustomer(customerName.value)" > add new customer</button>
 
 <ul>
-  <li *ngFor="let customer of customerList; let i = index">
+  <li *ngFor="let customer of customerList; let i = index; trackBy: trackByCustomerID">
     {{ i }} : {{ customer.name }}
     <button (click)="removeUser(customer.id)" >X</button>
   </li>

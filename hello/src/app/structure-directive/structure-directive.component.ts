@@ -38,4 +38,8 @@ export class StructureDirectiveComponent implements OnInit {
   getNewCustomerID(): number {
     return this.customerList.length ? Math.max(...this.customerList.map(({id}) => id)) + 1 : 1;
   }
+
+  trackByCustomerID(index: number, customer: Customer) {
+    return customer.id; // or index
+  }
 }
