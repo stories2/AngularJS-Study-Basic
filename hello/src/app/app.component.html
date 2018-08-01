@@ -38,3 +38,7 @@
 <p>name: {{ngModelUserName}}</p>
 
 <div appTextBlue>Text set blue directive</div>
+
+<div [ngClass]="'text-bold color-blue'">string class</div>
+<div [ngClass]="['text-bold', 'color-blue']">array class</div>
+<div [ngClass]="{'text-bold': true, 'color-blue': false}">only work text-bold</div>
