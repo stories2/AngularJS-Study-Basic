@@ -2,31 +2,22 @@
   <div class="row">
     <div class="form-inline">
       <div class="form-group" style="margin: 30px 0">
-        <div class="col-3">
-          <label for="name">Name: </label>
-        </div>
-        <div class="col-9">
-          <input #name type="text" id="name" class="form-control" placeholder="Type your name">
-        </div>
 
-        <div class="col-3">
-          <label for="role">Role: </label>
-        </div>
-        <div class="col-9">
-          <select #role id="role" class="form-control">
-            <option>Admin</option>
-            <option>Developer</option>
-            <option>Designer</option>
-          </select>
-        </div>
+        <label for="name">Name: </label>
+        <input #name type="text" id="name" class="form-control" placeholder="Type your name">
 
-        <div class="col-12">
-          <button type="button"
-                  class="btn btn-default"
-                  (click)="addUser(name.value, role.value)">Add user</button>
-        </div>
+        <label for="role">Role: </label>
+        <select #role id="role" class="form-control">
+          <option>Admin</option>
+          <option>Developer</option>
+          <option>Designer</option>
+        </select>
+
+        <button type="button"
+                class="btn btn-default"
+                (click)="addUser(name.value, role.value)">Add user</button>
       </div>
-      <app-user-list [childUserList]="userList"></app-user-list>
+      <app-user-list [_childUserList]="userList"></app-user-list>
     </div>
   </div>
 </div>
