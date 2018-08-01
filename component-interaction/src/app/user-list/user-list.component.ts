@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input , Output} from '@angular/core';
 import {User} from "../models/user.model";
+import {EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-user-list',
@@ -30,4 +31,6 @@ export class UserListComponent implements OnInit {
   get _childUserList() {
     return this.childUserList;
   }
+
+  @Output() remove = new EventEmitter<User>();
 }

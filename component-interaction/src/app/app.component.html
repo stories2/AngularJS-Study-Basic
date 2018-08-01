@@ -17,7 +17,7 @@
                 class="btn btn-default"
                 (click)="addUser(name.value, role.value)">Add user</button>
       </div>
-      <app-user-list [_childUserList]="userList"></app-user-list>
+      <app-user-list [_childUserList]="userList" (remove)="removeUser($event)"></app-user-list>
     </div>
   </div>
 </div>

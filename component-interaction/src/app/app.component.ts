@@ -29,4 +29,8 @@ export class AppComponent {
   getNextID(): number {
     return this.userList.length ? Math.max(...this.userList.map(({ id }) => id)) + 1 : 1;
   }
+
+  removeUser(user: User) {
+    this.userList = this.userList.filter(({id}) => id !== user.id);
+  }
 }
