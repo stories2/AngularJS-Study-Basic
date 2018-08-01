@@ -20,6 +20,7 @@ export class StructureDirectiveComponent implements OnInit {
 
   ];
   selectedNumber = 0;
+  emailValidationCheckResult: string;
 
   constructor() { }
 
@@ -42,5 +43,15 @@ export class StructureDirectiveComponent implements OnInit {
 
   trackByCustomerID(index: number, customer: Customer) {
     return customer.id; // or index
+  }
+
+  checkEmail(email: string) {
+    const regexr = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    if(regexr.test(email)) {
+      this.emailValidationCheckResult = 'ok';
+    }
+    else {
+      this.emailValidationCheckResult = 'fail';
+    }
   }
 }

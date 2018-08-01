@@ -30,3 +30,9 @@
   <div *ngSwitchCase="'3'">Three</div>
   <div *ngSwitchDefault>Default</div>
 </div>
+
+<div>
+  <input #emailInput type="email" placeholder="Type your email">
+  <button (click)="checkEmail(emailInput.value)">Check email is vaildation</button>
+</div>
+<span *ngIf="emailValidationCheckResult">{{ emailValidationCheckResult }}</span>
