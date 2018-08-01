@@ -1,3 +1,20 @@
-<p>
-  user-list works!
-</p>
+<div class="col-12">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let childUser of childUserList; let i = index">
+        <td>{{ i }}</td>
+        <td>{{ childUser.id }}</td>
+        <td>{{ childUser.name }}</td>
+        <td>{{ childUser.role }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
